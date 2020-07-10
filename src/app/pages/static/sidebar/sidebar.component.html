@@ -1,0 +1,35 @@
+<mat-nav-list>
+    <h3 matSubheader>Pages</h3>
+    <!-- Menu -->
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">Main</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/settings">Information</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard/settings">Posts</a>
+
+
+    <mat-divider></mat-divider>
+
+    <!-- Profile -->
+
+    <div class="profile-card">
+        <img src="assets/resources/images/IMG_20200707_1120370000.jpg" alt="profile-img"/><br>
+        <div class="prof-info">
+            <span>[UserName]</span><br>
+            <span>[Role]</span>
+        </div>
+        
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h3 matSubheader>Tools</h3>
+    <!-- Menu -->
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
+        <mat-icon>import_contacts</mat-icon>
+        Import
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
+        <mat-icon>contact_phone</mat-icon> 
+        Contact
+    </a>
+
+</mat-nav-list>
