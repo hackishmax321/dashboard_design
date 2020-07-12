@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SampleDataService } from 'src/app/services/sample-data.service';
 
 @Component({
   selector: 'app-default',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  constructor() { }
+  private sample_pie = [];
+  constructor(private _sampleServe: SampleDataService) { }
 
   ngOnInit() {
+    this.sample_pie = this._sampleServe.dataSampling();
   }
 
 }

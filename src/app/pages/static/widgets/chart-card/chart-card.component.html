@@ -1,0 +1,15 @@
+<div class="chart-info">
+    <span class="main">{{topic}}</span><br>
+    <span class="meas">{{measure}}</span>
+    <span><mat-icon color="primary">trending_up</mat-icon></span>
+    <span class="val">{{mvalue}}</span>
+    <span class="unit">%</span>
+    
+</div>
+
+<highcharts-chart
+   [Highcharts] = "highcharts" 
+   [options] = "chartOptions" 
+   style = "width: 100%; height: 400px; display: block;">
+</highcharts-chart>
+

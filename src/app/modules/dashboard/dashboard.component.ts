@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  
+  visibility = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleAction(ev){
+    this.visibility = !this.visibility;
   }
 
 }

@@ -7,9 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    
+    
+    
     
   ],
   imports: [

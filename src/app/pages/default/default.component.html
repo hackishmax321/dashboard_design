@@ -1,20 +1,38 @@
 <div>
     All Charts
+
+    <app-chart-area></app-chart-area>
+</div>
+<br>
+<mat-divider></mat-divider>
+
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="chart-cards">
+    <mat-card fxFlex="25" class="min-chart"> 
+        <app-chart-card topic="This is the Title" measure="Stock Trend" mvalue="24"></app-chart-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="min-chart"> 
+        <app-chart-card topic="This is the Title" measure="Stock Trend" mvalue="24"></app-chart-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="min-chart"> 
+        <app-chart-card topic="This is the Title" measure="Stock Trend" mvalue="24"></app-chart-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="min-chart"> 
+        <app-chart-card topic="This is the Title" measure="Stock Trend" mvalue="24"></app-chart-card>
+    </mat-card>
+    
 </div>
 
 <mat-divider></mat-divider>
 
-<div>
-    <div>Line 01</div>
-    <div>Line 02</div>
-    <div>Line 03</div>
-    <div>Line 04</div>
-</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="chart-cards chart-pie">
+    <mat-card fxFlex="60"> 
+        <app-table></app-table>
+    </mat-card>
 
-<mat-divider></mat-divider>
-
-<div>
-    <div>Pie 01</div>
-    <div>Pie 02</div>
+    <mat-card fxFlex="40" > 
+        <app-chart-pie [samplepie]="sample_pie"></app-chart-pie>
+    </mat-card>
+    
     
 </div>
